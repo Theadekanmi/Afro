@@ -29,7 +29,7 @@ const Nav = () => {
         <p className='text-[11px] md:text-[13px] text-dark-grey'>plastic surgery</p>
       </h1>
   
-      <div className="hidden lg:flex gap-20" data-aos="flip-left" >
+      <div className="hidden lg:flex gap-20" data-aos="flip-left" onClick={() => setIsMenuOpen(false)} >
         <Link className="pt-5 text-light-green hover:text-light-green" to="/">Home</Link>
         <Link className="pt-5 hover:text-light-green" to="/about">About</Link>
         <Link className="pt-5 hover:text-light-green" to="/blog">Blog</Link>
@@ -61,7 +61,7 @@ const Nav = () => {
     </div>
   
     {isMenuOpen && (
-        <div className="sm:hidden  p-16 flex flex-col items-center  gap-4 py-4 bg-white border-b-[1px]">
+        <div className="sm:hidden  p-16 flex flex-col items-center  gap-4 py-4 bg-white border-b-[1px] absoluten top-20">
       <Link className="pt-52 text-light-green hover:text-light-green" to="/">Home</Link>
         <Link className="pt-5 hover:text-light-green" to="/about">About us</Link>
         <Link className="pt-5 hover:text-light-green" to="/blog">Blog</Link>
