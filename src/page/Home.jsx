@@ -3,6 +3,7 @@ import React from "react";
 import CountUp from 'react-countup';
 
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -24,9 +25,9 @@ const Home = () => {
               <button className="md:w-[170px] md:hover:text-pinka w-[200px] h-[50px] md:text-white text-white hover:text-pinka mr-5 rounded-[100px] border-pinka border-2 hover:bg-white md:text-[16px] text-[] bg-pinka">
                 READ MORE
               </button> 
-              <button className="md:w-[250px] w-[300px] md:h-[50px] h-[50px] md:text-light-green md:text-[16px] text-[14px] text-light-green mr-5 rounded-[100px] md:border border-green-400  border-light-green border-2 border-green-20   md:hover:bg-light-green  hover:bg-light-green hover:text-white">
+              <Link to="/Contact"> <button className="md:w-[250px] w-[300px] md:h-[50px] h-[50px] md:text-light-green md:text-[16px] text-[14px] text-light-green mr-5 rounded-[100px] md:border border-green-400  border-light-green border-2 border-green-20   md:hover:bg-light-green  hover:bg-light-green hover:text-white">
                 MAKE AN APPOINTMENT
-              </button>
+              </button></Link>
             </span>
    
           </div>

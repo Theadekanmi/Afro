@@ -39,10 +39,11 @@ const Nav = () => {
     
     {/* Right Section */}
     <div className="flex items-center gap-5" data-aos="flip-up" >
-      <button className='hidden md:block w-[200px] lg:w-[300px] text-center h-[40px] lg:h-[47px] rounded-[20px] hover:bg-white hover:text-pinka border-b-pinka bg-pinka text-white'  >
+     <Link to="/Contact">
+     <button className='hidden md:block w-[200px] lg:w-[300px] text-center h-[40px] lg:h-[47px] rounded-[20px] hover:bg-white hover:text-pinka border-b-pinka bg-pinka text-white'  >
         MAKE AN APPOINTMENT
       </button>
-  
+  </Link>
       <div className="hidden lg:flex items-center gap-5" data-aos="flip-down"  >
         <a className="myicon mt-2" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebook style={fbStyle} />
