@@ -2,6 +2,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaInbox } from "react-icons/fa";
 
+
 export const Contact = () => {
   const fbStyle ={
     fontSize:'25px',

@@ -3,6 +3,7 @@ import './App.css'
 import { useEffect } from "react";
 import Home from './page/Home'
 import About from './page/About'
+import Breast from './page/Breast';
 import Blog from './page/Blog'
 import { Contact } from './page/Contact'
 import Nav from './components/Nav'
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/breast" element={<Breast />} />
           
         </Routes>
       </Router>

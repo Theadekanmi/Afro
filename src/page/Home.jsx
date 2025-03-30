@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
 
   return (
-    <div className="w-[100vw] flex-col sm:flex-row md:w-full ">
+    <div className="md:w-[100vw] flex-col md:flex-row w-full ">
       <div className=" w-full  flex flex-col justify-center items-center  sm:flex-row ">
         <div className=" md:-[50%] w-[100vw] md:h-[800px] h-[600px] md:pl-[0px]  pl-0 bg-cover bg-center bg-[url(https://res.cloudinary.com/dlb3doese/image/upload/v1736765072/home_slider_t2pa6c.jpg)]">
           <div className="md:w-[40%]  h-[700px] md:ml-[50px] ml-5 ">
@@ -25,7 +25,7 @@ const Home = () => {
               <button className="md:w-[170px] md:hover:text-pinka w-[200px] h-[50px] md:text-white text-white hover:text-pinka mr-5 rounded-[100px] border-pinka border-2 hover:bg-white md:text-[16px] text-[] bg-pinka">
                 READ MORE
               </button> 
-              <Link to="/Contact"> <button className="md:w-[250px] w-[300px] md:h-[50px] h-[50px] md:text-light-green md:text-[16px] text-[14px] text-light-green mr-5 rounded-[100px] md:border border-green-400  border-light-green border-2 border-green-20   md:hover:bg-light-green  hover:bg-light-green hover:text-white">
+              <Link to="/Contact"> <button className="md:w-[250px]  md:h-[50px] h-[50px] md:text-light-green md:text-[16px] text-[14px] text-light-green mr-5 rounded-[100px] md:border border-green-400  border-light-green border-2 border-green-20   md:hover:bg-light-green  hover:bg-light-green hover:text-white">
                 MAKE AN APPOINTMENT
               </button></Link>
             </span>
@@ -34,7 +34,7 @@ const Home = () => {
         </div>
       </div>
 
-
+ 
       <div className=" md:w-[100vw]  w-full md:flex flex-row md:ml-0 ml-0 justify-center items-center mt-[100px]">
         <div className="md:w-[600px] md:m-auto w-full h-[600px]">
           <h3 className="text-dark-light-grey md:pl-0 pl-5 text-1">This is Dr Pro</h3>
@@ -58,7 +58,6 @@ const Home = () => {
           <h1 className="md:pl-0 pl-10 md:pb-0 pb-10">Injectibles</h1></span>
          </div>
 
-          {/* <div className="w-[400px] h-[300px] rounded border-b-orange"></div> */}
         </div>
         
         <div className="md:w-[600px] w-[360px] m-auto md:pl-[0px] md:mt-0 mt-48 pl-0   md:h-[500px] shadow-2xl" data-aos="flip-left">
@@ -106,10 +105,10 @@ const Home = () => {
             MAKE AN APPOINTMENT
           </button>
         </div>
-      </div>
+      </div> 
 
        
-      <div className="md:w-[100vw] md:h-[800px]  flex flex-col md:flex-row md:mt-0 mt-20 bg-dark-light-greey">
+       <div className="md:w-[100vw] md:h-[800px]  flex flex-col md:flex-row md:mt-0 mt-20 bg-dark-light-greey">
         <div className=" md:w-[40vw] order-2 md:order-1 md:h-[800px] w-[100vw] h-[400px] md:pl-[70px] bg-cover bg-center bg-[url(https://res.cloudinary.com/dlb3doese/image/upload/v1737111779/why_1.jpg_mtufyq.webp)]"></div>
         <div className="md:w-[600px] md:h-[600px] order-1 md:order-2 m-auto">
           <h3 className="text-dark-light-grey md:pl-0 pl-6 text-1">This is Dr Pro</h3>
@@ -162,7 +161,7 @@ const Home = () => {
         <button className="md:w-[300px] md:h-[55px] h-[60px] rounded-[20px] md:mt-0 mt-3 bg-pikka2  text-white text-3xl " data-aos="flip-left">
           +34 586 778 8892
         </button>
-      </div>
+      </div> 
 
 
 
@@ -198,8 +197,10 @@ const Home = () => {
               <p className="text-dark-light-grey pt-[20px]"> Odio ultrices ut. Etiam ac erat ut enim maximus accumsan vel ac nisl. Duis feugiat bibendum orci, non elementum urna.</p>
             </div>
           <div className="text-center w-[380px]  md:m-[20px]  justify-center items-center border-b-pink"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <div className="  m-auto bg-cover bg-center  w-[70px] h-[70px] rounded-[100%] bg-[url(https://res.cloudinary.com/dlb3doese/image/upload/v1737131388/256x256bb_idnd3b.jpg)]"></div>
-            <h2 className=" text-dark text-2xl pt-[20px]">Breast Augmentation</h2>
+                
+                <Link to="/Breast">            <div className="  m-auto bg-cover bg-center  w-[70px] h-[70px] rounded-[100%] bg-[url(https://res.cloudinary.com/dlb3doese/image/upload/v1737131388/256x256bb_idnd3b.jpg)]"></div>
+                </Link>
+                <h2 className=" text-dark text-2xl pt-[20px]">Breast Augmentation</h2>
             <p className="text-dark-light-grey pt-[20px]"> Odio ultrices ut. Etiam ac erat ut enim maximus accumsan vel ac nisl. Duis feugiat bibendum orci, non elementum urna.</p>
           </div>
           <div className="text-center w-[380px]  md:m-[20px]  justify-center items-center border-b-pink"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -249,7 +250,7 @@ contact@gmail.com</p></div>
           <span className="flex justify-around text-dark-grey pt-3">Friday:<p>8:00am - 7:00pm</p></span>
           </div>
              
-        </div>    
+        </div>     
     </div>
   );
 };
